@@ -22,14 +22,13 @@ body {
     padding-left: 10.5rem;
 }
 
-#title button{
+#title .rounded-pill{
     color:white;
     background-image: linear-gradient(to right, #33D35E 0%, #2AB6D9 100%);
     padding: 8px 32px;
-    margin-right: 10.5rem;
 }
 
-#title button:hover{
+#title .rounded-pill:hover{
     background: linear-gradient(87deg, rgba(51,211,94,0.4) 0%, rgba(42,182,217,0.4) 100%);
 }
 
@@ -40,7 +39,15 @@ body {
     padding-bottom: 1.5%;
     padding-right: 0;
     z-index: 5;
-    max-height: 80px;;
+    max-height: 80px;
+}
+
+.navbar .navbar-collapse{
+    text-align: center;
+}
+
+.navbar .navbar-toggler{
+    margin-right: 5rem;
 }
 
 .nav-text{
@@ -53,13 +60,8 @@ body {
     background-color: #FAFAFA;
     text-align: left;
     padding: 7.5rem 25rem 7.5rem 10rem;
-    overflow-x: clip;
     display: inline-block;
     max-width: 1455px;
-}
-
-.title-header-text{
-    margin-bottom: 40px;
 }
 
 .title-text p{
@@ -78,14 +80,15 @@ body {
 
 .mockups{
     position: absolute;
-    left: 46%;
-    top: -15rem;
+    left: 41rem;
+    top: -36rem;
     z-index: 2;
 }
 
 .bg-intro-desktop{
     position: absolute;
-    top: -25rem;
+    top: -44rem;
+    left: 30rem;
     z-index: 0;
 }
 
@@ -109,7 +112,6 @@ body {
     max-width: 635px;
     color: #9597a5;
     line-height: 1.556;
-    /* padding-left: 1rem; */
 }
 
 .feature{
@@ -159,6 +161,7 @@ body {
 
 .card{
     width: 257px;
+    border: none;
 }
 
 .card-body p{
@@ -222,4 +225,96 @@ footer{
 .footer-copyright-section button:hover{
     color:white;
     background: linear-gradient(87deg, rgba(51,211,94,1) 0%, rgba(255,255,255,0.726785782672444) 52%, rgba(42,182,217,1) 100%);
+}
+
+
+@media all and (min-width: 1440px){
+    #title .rounded-pill{
+        margin-right: 10.5rem;
+    }
+
+    .title-text{
+        overflow-x: clip;
+    }
+
+    .bg-intro-mobile {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1440px) {
+
+    body{
+        text-align: center;
+        width: 375px;
+    }
+
+    p{
+        width: 90%;
+        margin-bottom: 10%;
+        font-size: 15px;
+    }
+
+    #title .logo{
+        padding: 0;
+        margin: auto;
+    }
+
+    .title-text{
+        margin-bottom: 600px;
+    }
+
+    .bg-intro-desktop{
+        display: none;
+    }
+
+    .bg-intro-mobile{
+        display: initial;
+        position: absolute;
+        top: -450px;
+        left: -175px;
+        z-index: 1;
+    }
+
+    .mockups{
+        position: absolute;
+        top: -650px;
+        left: -130px;
+        z-index: 2;
+    }
+
+    .navbar-toggler{
+        background-color: white;
+        margin: 0;
+    }
+
+    .title-header-text{
+        /* position: relative; */
+        top: 650px;
+        text-align: center;
+        /* width: 450px; */
+        /* padding-left: 80px; */
+        background-color: #FAFAFA;
+    }
+
+    #title .title-header{
+        font-size: 40px;
+    }
+
+    #articles .card{
+        margin: auto auto 10% auto;
+    }
+
+    .social-links{
+        padding-left: 50px;
+    }
+
+    .white-logo{
+        padding-left: 30px;
+    }
+
+    .footer-copyright-section{
+        right: 115px;
+        text-align: center;
+    }
 }
