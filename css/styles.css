@@ -9,6 +9,13 @@ body {
 /* NavBar */
 #title a{
     color:#9597A5;
+    padding: 26px 8px;
+}
+
+#title a:hover{
+    color: #2D314D;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #33D35E 0%, #2AB6D9 100%) 1;
 }
 
 #title .logo{
@@ -22,6 +29,10 @@ body {
     margin-right: 10.5rem;
 }
 
+#title button:hover{
+    background: linear-gradient(87deg, rgba(51,211,94,0.4) 0%, rgba(42,182,217,0.4) 100%);
+}
+
 #title .navbar{
     background-color: white;
     position: relative;
@@ -29,6 +40,7 @@ body {
     padding-bottom: 1.5%;
     padding-right: 0;
     z-index: 5;
+    max-height: 80px;;
 }
 
 .nav-text{
@@ -133,6 +145,10 @@ body {
     font-weight: 100;
 }
 
+.article-header:hover{
+    color: #30C88F;
+}
+
 .articles-title{
     color: #2D314D;
     font-size: 2.5rem;
@@ -156,6 +172,7 @@ body {
 footer{
     background-color: #2D314D;
     padding: 4rem 0 3rem;
+    color:white;
 }
 
 .social-links{
@@ -165,28 +182,44 @@ footer{
 
 .footer-icon {
     padding: 3% 10px;
+    fill:white;
+}
+
+.footer-icon:hover{
+    filter: invert(0.5) sepia(1);
 }
 
 .footer-link{
     font-size: 15px;
     line-height: 1.733;
-    color: white;
     padding-top: 8px;
+}
+
+.footer-link:hover{
+    color: #30C88F;
 }
 
 .footer-info{
     list-style-type: none;
 }
 
-.footer-copyright{
+.footer-copyright-section{
     padding-left: 17.5rem;
     text-align: right;
-    color:white;
 }
 
-.footer-copyright button{
+.footer-copyright-section button{
     color:white;
     background-image: linear-gradient(to right, #33D35E 0%, #2AB6D9 100%);
     padding: 10px 32px;
     margin-bottom: 30px;
+}
+
+.footer-copyright-section p{
+    opacity: 0.5;
+}
+
+.footer-copyright-section button:hover{
+    color:white;
+    background: linear-gradient(87deg, rgba(51,211,94,1) 0%, rgba(255,255,255,0.726785782672444) 52%, rgba(42,182,217,1) 100%);
 }
