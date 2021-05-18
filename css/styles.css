@@ -261,7 +261,8 @@ footer{
     }
 
     .title-text{
-        margin-bottom: 600px;
+       margin: auto;
+       padding: 0;
     }
 
     .bg-intro-desktop{
@@ -271,16 +272,17 @@ footer{
     .bg-intro-mobile{
         display: initial;
         position: absolute;
-        top: -450px;
-        left: -175px;
+        top: -853px;
+        left: 0px;
         z-index: 1;
     }
 
     .mockups{
         position: absolute;
-        top: -650px;
-        left: -130px;
+        top: -990px;
+        left: 0px;
         z-index: 2;
+        width: 100%;
     }
 
     .navbar-toggler{
@@ -288,33 +290,108 @@ footer{
         margin: 0;
     }
 
+    .navbar .navbar-collapse{
+        background-color: white;
+        margin-top: 50px;
+        margin:50px 25px  auto;
+        border: solid 1px whitesmoke;
+        border-radius: 5px;
+        box-shadow: 0px 60px 150px 60px rgba(45,49,77,1);
+    }
+
+    #title a{
+        font-size: 18px;
+        color: #2D314D;
+    }
+
+    #title a:hover{
+        border-image: none;
+        border-bottom: none;
+    }
+
+    .navbar .rounded-pill{
+        display: none;
+    }
+
     .title-header-text{
-        /* position: relative; */
-        top: 650px;
+        position: relative;
+        margin: 400px auto 100px;
         text-align: center;
-        /* width: 450px; */
-        /* padding-left: 80px; */
-        background-color: #FAFAFA;
+    }
+
+    .title-header-text button{
+        margin: auto;
     }
 
     #title .title-header{
         font-size: 40px;
     }
 
-    #articles .card{
-        margin: auto auto 10% auto;
-    }
-
-    .social-links{
-        padding-left: 50px;
-    }
-
-    .white-logo{
-        padding-left: 30px;
-    }
-
-    .footer-copyright-section{
-        right: 115px;
+    #features{
+        padding: 0;
+        margin: auto;
         text-align: center;
+        padding-bottom: 50px;
+    }
+    
+    #features .title-header{
+        padding: 0;
+        padding-top: 50px;
+        padding-bottom: 30px ;
+    }
+
+    .features-header-text{
+        padding-left: 0;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .feature{
+        margin: auto;
+    }
+
+    .feature-text{
+        margin: auto;
+    }
+
+    #articles{
+        padding: 0;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #articles .card{
+        margin: 10% auto auto auto;
+        padding: 0;
+    }
+
+    footer{
+        margin:auto;
+        padding: 0;
+        padding-top: 50px;
+    }
+    
+    .footer-info{
+        margin: auto;
+        padding: 0;
+    }
+    
+    .social-links{
+        padding: 10px 70px 0;
+        margin:auto;
+    }
+     
+    .footer-copyright-section{
+        margin: auto;
+        padding: 0;
+    }
+
+    .footer-copyright-section .rounded-pill{
+        margin: 10px 100px 10px;
+    }
+    
+    .footer-copyright-section p{
+        padding-right: 35px;
     }
 }
